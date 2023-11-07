@@ -27,9 +27,37 @@
 24. **shift()**: Dizinin ilk öğesini kaldırır ve kaldırılan öğeyi döndürür.
 25. **slice()**: Belirli bir bölümü kopyalar ve yeni bir dizi olarak döndürür.
 26. **some()**: En az bir dizi öğesinin belirli bir koşulu sağlayıp sağlamadığını kontrol eder.
-27. **sort()**: Diziyi belirli bir sıraya göre sıralar.
-28. **splice()**: Dizideki bir bölümü kaldırır, değiştirir veya yeni öğeler ekler.
-29. **toLocaleString()**: Diziyi temsil eden bir yerel dizeyi döndürür.
-30. **toString()**: Diziyi bir dizeye dönüştürür.
-31. **unshift()**: Dizinin başına bir veya daha fazla öğe ekler ve yeni uzunluğu döndürür.
-32. **values()**: Dizinin değerlerini içeren bir dizi döndürür.
+28. **sort()**: Diziyi belirli bir sıraya göre sıralar.
+29. **splice()**: Dizideki bir bölümü kaldırır, değiştirir veya yeni öğeler ekler.
+30. **toLocaleString()**: Diziyi temsil eden bir yerel dizeyi döndürür.
+31. **toString()**: Diziyi bir dizeye dönüştürür.
+32. **unshift()**: Dizinin başına bir veya daha fazla öğe ekler ve yeni uzunluğu döndürür.
+33. **values()**: Dizinin değerlerini içeren bir dizi döndürür.
+
+## Do/Do While Farkı
+do while döngüsü ve while döngüsü, JavaScript'te döngü oluşturmak için kullanılan iki farklı döngü türüdür.
+
+while döngüsü, koşul doğru olduğu sürece bir kod bloğunu yürütür.
+do while döngüsü ise koşulun doğru olup olmadığını kontrol etmeden önce kod bloğunu en az bir kez yürütür ve ardından koşulu kontrol eder.
+    
+## For/For Each Farkı
+JavaScript'te, `for` ve `forEach` döngüleri, bir dizi veya bir nesne üzerinde işlem yapmak için kullanılan farklı döngü türleridir. İşlevsellikleri ve kullanım amaçları açısından bazı farklılıklar bulunmaktadır:
+
+1. `for` döngüsü: Genellikle bir dizi veya nesne üzerinde belirli bir sayıda tekrarlamak istediğinizde kullanılır. Döngü başlangıç koşulunu, döngünün devam etme koşulunu ve her adımda gerçekleştirilecek olan işlemi manuel olarak belirtmenizi sağlar.
+
+```javascript
+for (let i = 0; i < array.length; i++) {
+  console.log(array[i]);
+}
+```
+
+2. `forEach` döngüsü: Bir dizi veya bir nesne üzerinde her öğe için belirli bir işlem yapmak istediğinizde kullanılır. `forEach` yöntemi, dizideki her öğe için belirtilen bir işlevi çağırır. Bu yöntem, döngü değişkenini ve döngü koşullarını manuel olarak belirtme gereksinimini ortadan kaldırır.
+
+```javascript
+array.forEach(function(element) {
+  console.log(element);
+});
+```
+
+Temel fark, `for` döngüsünün daha fazla esneklik sağlaması ve her türlü döngü senaryosunu kapsayabilmesidir. Diğer yandan, `forEach` döngüsü daha basit bir sözdizimi sunar ve döngü değişkenini ve döngü koşullarını belirtme gereksinimini ortadan kaldırır. Ayrıca, `forEach` döngüsü, dizi üzerinde işlem yapmak için daha temiz bir yaklaşım sunabilir.
+
